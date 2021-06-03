@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/seekVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buttonPlay"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/play"
+            app:backgroundTint="@null"
+            android:onClick="executarSom"/>
+
+        <Button
+            android:id="@+id/buttonPause"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/pause"
+            app:backgroundTint="@null"
+            android:onClick="pausarSom"/>
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/stop"
+            app:backgroundTint="@null"
+            android:onClick="pararSom"/>
+
+
+    </LinearLayout>
+</LinearLayout>
